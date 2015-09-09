@@ -4,7 +4,7 @@
 	8/5/15
 
 	The following code was provided and not written by me. The assignment was to get it to work 
-	by writing the code for createWeightedGraph(). See WeightedGraph.h.
+	by writing the code for createWeightedGraph(). See weightedGraph.h.
  */
 #include <iostream>
 #include <fstream>

@@ -237,18 +237,18 @@ Below is code added by Melissa Cunningham. Above code was provided.
 template <class elemType>
 void bSearchTreeType<elemType>::createList(orderedLinkedList<elemType> &newlist)
 {
-	//Declare variables to hold tree nodes and an item for adding to list
-	nodeType2<elemType> *current;
-	current = root;
+    //Declare variables to hold tree nodes and an item for adding to list
+    nodeType2<elemType> *current;
+    current = root;
 
-	//Make sure tree is not empty
+    //Make sure tree is not empty
     if (root == NULL)
         cout << "Tree is empty. Cannot create list" << endl; 
     else
     { 
-       //Add all items to list
-	   addToList(newlist, current);
-	}
+       	//Add all items to list
+	addToList(newlist, current);
+    }
 }//end createList
 
 template <class elemType>
