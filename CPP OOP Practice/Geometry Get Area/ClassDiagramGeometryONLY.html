@@ -1,0 +1,40 @@
+
+<img src="http://yuml.me/diagram/boring/class/
+[Shape
+|
+-area: Double;
+|
++setArea(anArea: Double);
++getArea(): Double;
++setPerimeter(aPerimeter: Double);
++getArea(): Double;
+],
+[Shape]^-[Triangle
+|
+-base: Double;
+-height: Double;
+-thirdSide: Double;
+|
++Triangle(aBase: Double; aHeight: Double; aThirdSide: Double);
+-calcArea();
+-calcPerimeter();
+],
+[Shape]^-[Rectangle
+|
+-length: Double;
+-width: Double;
+|
++Rectangle(aLength: Double; aWidth: Double);
+-calcArea();
+-calcPerimeter();
+],
+[Shape]^-[Circle
+|
+-radius: Double;
+|
++Circle(aRadius: Double);
+-calcArea();
+-calcPerimeter();
+]
+">
+
