@@ -1,0 +1,152 @@
+/*
+Melissa Cunningham
+HTML Project: CSS Page for Different Devices
+7/28/15
+*/
+
+/*Formatting for smaller computers for Past Work page*/
+@media screen and (max-width: 1366px) {
+	/*Set coordinates of each figure box*/
+	#richie {
+		left: 70px;
+		top: 200px;
+	}
+
+	#barny {
+		left: 70px;
+		top: 300px;
+	}
+
+	#melissa {
+		left: 70px;
+		top: 400px;
+	}
+
+	#jangomail {
+		left: 70px;
+		top: 500px;;
+	}
+
+	#jangosmtp1 {
+		left: 70px;
+		top: 600px;
+	}
+
+	#jangosmtp2 {
+		left: 70px;
+		top: 700px;
+	}
+
+	/*Positioning for Github section*/
+	#github {
+		left: 500px;
+		top: 200px;
+	}
+
+	/*Footer positioning*/
+	#pastworkfooter {
+		top: 800px;
+	}
+}
+
+
+/*Formatting for iPads*/
+@media screen and (max-width: 1024px) {
+	/*Right and left sections of pages*/
+	.rightDiv {
+		width: 50%;
+	}
+	.leftDiv {
+		width: 30%;
+	}
+	
+	/*Programming language summary*/
+	table.programmingTable {
+		width: 20%;
+	}
+	
+	/*Images in right sections*/
+	.image-right {
+		width: 50%;
+	}	
+	
+	/*Contact info on right side of page*/
+	#contact {
+		width:40%;
+	}	
+	
+	/*Positioning for Github section in Past Work*/
+	#github {
+		left: 100px; 
+		top: 800px;
+	}
+
+	/*Footer positioning in Past Work*/
+	#pastworkfooter {
+		top: 1250px;
+	}
+}
+
+/*Formatting for phones*/
+@media screen and (max-width: 768px) {
+	/*Squeeze together the nav items*/
+	nav ul li {
+		padding-left: 10px;	
+		padding-right: 10px;
+	}
+	
+	/*Hide the imagemap image*/
+	#languages {
+		display:none;
+	}
+	
+	/*Keep background image visible on homepage*/
+	figure {
+		height:300px;
+	}
+	
+	/*Homepage icons*/
+	div#home-bottom > div {
+		width:100%;
+	}
+	
+	/*Right and left sections of pages*/
+	div.rightDiv {
+		width: 100%; 
+		margin-right:0px;
+	}
+	div.leftDiv {
+		width: 100%; 
+		margin-left:0px;
+	}
+	table.programmingTable {
+		width: 100%; 
+		margin-left:0px;
+	}
+	.image-right {
+		width: 100%; 
+		margin-bottom: 20px;
+	}
+	#contact {
+		width:100%;
+	}
+	
+	/*Consulting image*/
+	div.mainDiv > p > img {
+		width:40%;
+	}
+	
+	/*Decrease font*/
+	div.mainDiv > p {
+		font-size: 1.2em;
+	}
+	div.mainDiv  h1 {
+		font-size: 1.1em;
+	}
+	
+	/*Decrease images*/
+	img.shadow {
+		width: 80%;
+	}
+}
+

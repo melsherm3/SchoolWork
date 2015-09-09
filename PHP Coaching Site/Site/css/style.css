@@ -1,0 +1,220 @@
+﻿/*Global*/
+body {
+    max-width: 1680px;
+    font-family:Oswald;
+}
+
+h3 {
+    font-family:Oswald;
+    font-size: 1.5em;
+    color:black;
+}
+
+a {
+	text-decoration:none;
+	color: #560202;
+}
+
+.header {
+    width:100%;
+    background-color:#560202;
+    height: 15%;
+	min-height:110px;
+    position:relative;
+}
+
+.header img{
+    float:left;
+    margin:0.3%;
+}
+
+nav{
+    width:100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color:#060505;
+}
+
+nav.coachtool {
+	color:white;
+	font-size: 1.50em;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-family:Oswald;
+    margin: 0 5%;
+}
+
+nav a.home{
+    float:right;
+    margin-right:5%;
+}
+
+.footer{
+    width:100%;
+    background-color:#060505;
+    color:white;
+    text-align:center;
+}
+.error {
+	color: #560202;
+}
+
+/*Homepage*/
+.mainimage{
+    width:100%;
+    height:60.35%;
+	min-height:500px;
+    background-repeat:no-repeat;
+    background-image: url(../img/toolhomeimage.jpg);
+    background-size:cover;
+}
+
+.athletes {
+	float: right;
+	margin-right: 25%;
+	margin-top: 5%;
+	font-size: 1.50em;
+}
+
+.coach {
+	float: left;
+	margin-left: 25%;
+	margin-top: 5%;
+	font-size: 1.50em;
+}
+
+.bottom {
+    width:100%;
+}
+
+/*Athlete Login Page*/
+.login {
+	padding:25px 0 0 50px;
+}
+.addworkout {
+	padding:25px 0 0 50px;
+}
+.welcome {
+	float:right;
+	padding: 25px 350px 0 0; 
+}
+.scrolling {
+	height:300px;
+	width:600px;
+	overflow-y:auto;
+	z-index:9999;
+}
+table.workouttable {
+	table-layout:fixed; 
+	width:100%;
+	word-break:break-all;
+}
+
+/*Coach Main Page*/
+.athletesummary {
+	padding:25px 75px 0 50px;
+	float:right;
+}
+table.summary {
+	width:1000px;
+}
+#submitathlete {
+	margin-left:225px;
+}
+
+/*Coach Detail Page*/
+table.athleteinfo {
+	background-color:transparent;
+	margin-top:10px;
+	border: none;
+	width:1000px;
+	font-size: 1.5em;
+}
+th.nounderline{
+	border-bottom: 0px;
+}
+
+/*Forms*/
+textarea {
+	height: 50px;
+	width: 300px;
+	margin-top:10px;
+}
+#submit {
+	margin-left:250px;
+}
+
+/*Tables*/
+th {
+	width:100px;
+	border-bottom: 1px solid black;
+}
+td {
+	height:20px;
+	text-align: center;
+}
+table{
+	background-color:white;
+	margin-top:10px;
+	border: 5px solid #560202;
+}
+
+
+
+
+
+
+
+/*RESPONSIVE ITEMS*/
+
+/*iPad*/
+  @media screen and (max-width: 1024px) {
+    .athletes{
+        margin-right:15%;
+    }
+	.coach {
+		margin-left:15%;
+	}
+	table.summary {
+		width:800px;
+	}
+ }
+
+/*large phone*/
+    @media screen and (max-width: 768px) {
+    .header{
+        display:block;
+        height:auto;
+        text-align:center;
+    }
+    .header img{
+        float:none;
+        text-align:center;
+    }
+	.athletes, .coach {
+		width:100%;
+		text-align: center;
+		padding-top:10px;
+		margin:0;
+	}
+	.mainimage{
+		min-height:700px;
+	}
+	nav.coachtool {
+	color:white;
+	font-size: 1.50em;
+	text-align:center;
+	}
+	table.summary {
+		width:500px;
+	}
+	.scrolling {
+		width:500px;
+		position:absolute;
+		top:600px;
+		left:50px;
+	}
+ }

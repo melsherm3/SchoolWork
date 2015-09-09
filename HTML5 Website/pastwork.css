@@ -1,0 +1,76 @@
+/*
+Melissa Cunningham
+HTML Project: Image Clipping CSS Page for Past Work
+7/2815
+*/
+
+/*Popup style*/
+figure {
+	background-color: rgb(34, 34, 34);
+	color: white;
+	width: 516px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	clip: rect(0, 232px, 50px, 0);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/*Screenshot box hover style*/
+figure:hover {
+	clip: auto;
+	z-index: 2;
+}
+
+/*Image captions*/
+figure figcaption {
+	margin: 10px;
+}
+
+/*Set coordinates of each figure box*/
+#richie {
+	left: 70px;
+	top: 200px;
+}
+
+#barny {
+	left: 500px;
+	top: 200px;
+}
+
+#melissa {
+	left: 930px;
+	top: 200px;
+}
+
+#jangomail {
+	left: 70px;
+	top: 300px;;
+}
+
+#jangosmtp1 {
+	left: 500px;
+	top: 300px;
+}
+
+#jangosmtp2 {
+	left: 930px;
+	top: 300px;
+}
+
+/*Positioning for Github section*/
+#github {
+	position: absolute;
+	left: 100px;
+	top: 400px;
+}
+
+/*Footer positioning*/
+#pastworkfooter {
+	position: absolute;
+	top: 830px;
+}

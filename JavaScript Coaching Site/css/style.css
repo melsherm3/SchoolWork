@@ -1,0 +1,374 @@
+﻿/*Global*/
+body {
+    max-width: 1680px;
+    font-family:Oswald;
+	margin:0px;
+}
+
+h3 {
+    font-family:Oswald;
+    font-size: 1.5em;
+    color:black;
+}
+
+td  {border-bottom:1px dotted black;}
+
+th {border-bottom:1px solid black;}
+
+.header {
+    width:100%;
+    background-color:#560202;
+    height: 15%;
+    position:relative;
+	min-height:110px;
+	top:-22px;
+}
+
+.header img{
+    float:left;
+    margin:0.3%;
+}
+
+.nav{
+    width:100%;
+    height:50px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    background-color:#060505;
+	position: relative;
+	top:110px;
+	z-index:999;
+	list-style-type:none;
+	font-size:1.4em;
+}
+ul {padding-left:0px;}
+.nav > ul {left: 100px;}
+.nav > li       {width: 15%; 
+				text-align: center;
+				padding-left:0px;
+                float: left; 
+				margin-right: 5px;}
+.nav > li > a   {display: block; 
+				margin: 0px; 
+				padding: 6px 3px;
+				color:#ffffff;
+				text-decoration:none;}
+.nav > li > ul  { padding-top: 5px;
+                     background-color: #000000;
+                     border-left: 2px solid white;
+                     border-right: 2px solid white;
+                     border-bottom: 1px solid white;}
+
+.nav > li > ul > li {width: inherit; height: 50px; 
+					list-style-type:none;}
+.nav > li > ul > li > a {margin: 0px; padding: 2px 3px;
+                             font-size: 0.9em; 
+							 color:white;
+							 text-decoration:none;}
+.nav > li > ul > li:hover {background-color:#560202;}
+
+h1 > a {text-decoration:none;
+		color:black;}
+
+a.nounderline {
+    text-decoration:none;
+}
+
+.social{
+    float:right;
+    display:block;
+    width:8%;
+    position:absolute;
+    bottom:5%;
+    right: 5%;
+	z-index:999;
+}
+.footer{
+    width:100%;
+    background-color:#560202;
+    color:white;
+    text-align:center;
+}
+
+
+/*Homepage*/
+.mainimage{
+    width:100%;
+    height:60.35%;
+    /*background-repeat:no-repeat;
+    background-image: url(../img/homeimage1.jpg);
+    background-size:cover;*/
+	min-height:500px;
+	position:relative;
+	top:-72px;
+}
+
+#slide {
+	position:relative;
+	width:100%;
+}
+
+#leftarrowsection {
+	height:500px;
+	width:100px;
+	position:absolute;
+	left: 0px;
+	top: 0px;
+}
+
+#rightarrowsection{
+	height:500px;
+	width:100px;
+	position:absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#rightarrow{
+	height: 40px;
+	width: 41px;
+	position:absolute;
+	top:60%;
+	left:0px;
+}
+#leftarrow{
+	height: 40px;
+	width: 41px;
+	position:absolute;
+	top:60%;
+	right:0px;
+}
+.bottom{
+    width:100%;
+	position:relative;
+	top:-30px;
+}
+
+.icons{
+    text-align:center;
+}
+.left{
+    float:left;
+    width:25%;
+}
+.right{
+    float:right;
+    width:25%;
+}
+.middle{
+    display:inline-block;
+    width:50%;
+}
+
+/*OTHER PAGES*/
+.maincontent {width:80%; 
+				min-height:700px;
+				overflow:hidden;
+				margin: 75px 100px 50px 100px}
+.img-left {float:left; margin-right: 10px;}
+.img-right {float:right; margin-left: 10px;}
+.content-left {float:left; width:50%;}
+.content-right {width:50%; float:left;}
+.content-left > p {width:100%;}
+.resume > ul {margin-left: 500px;}
+.resume > li {margin-left: 40%; font-size:1.3em;}
+.highlights > table {width:50%;}
+.highlights > table > th, td {width:15%;text-align:center;}
+.contact{float:left; width:50%;}
+.contact-header {position:absolute; top:150px;}
+.page-header {position:absolute; top:150px; left:25%;}
+.form{float:right; width:50%;}
+.form-input {width:60%;}
+.calculator {
+	border:1px solid black; 
+	margin: 10px 25% 0px 25%;
+	padding:20px;
+}
+#calendar {
+	margin-left:30%;
+}
+.calendar {
+	width:700px;
+	height:500px;
+}
+.calendarRow {
+	
+}
+.calendarCell {
+	font-size:12px;
+}
+
+.calendarCellToday {
+	font-size:15px;
+	font-weight:bold;
+	color:red;
+}
+.calendarCellRaceDay {
+	color:green;
+}
+.text-center {
+	text-align: center;
+}
+div.boulder-coaching {height:0; overflow:hidden}
+
+/*About Page Gallery*/
+div#pageOverlay {
+	display:none;
+	position:fixed; top:0px; left:0px;
+	width:100%; height:100%;
+	z-index = 999;
+	background-color: rgb(241, 154, 154);
+	filter: alpha(opacity = 80); opacity: 0.80;
+}
+#slidebox              {width: 300px; float: left; margin-right: 10px;
+                        border-right: 4px solid rgb(86, 2, 2);
+                        border-bottom: 4px solid rgb(110, 17, 17)}
+
+#slidebox p            {clear: left; text-align: center; font-size: 10px; margin: 10px}
+#slidebox p a          {text-decoration: none}
+#slidebox p a:hover    {text-decoration: underline}
+
+#slides                {list-style-type: none; display: block; margin: 0px 10px 10px 0px}
+#slides li             {display: block; float: left; text-align: center}
+#slides li a           {display: block; width: 100%; text-decoration: none}
+#slides li a img       {border: 1px solid white}
+#galleryBox *          {background-color: rgb(205, 202, 202)}
+
+#galleryBox            {position: fixed; top: 15px; left: 200px; z-index: 1000;
+                        background-color: rgb(205, 202, 202); padding: 2px 10px;
+                        border: 5px ridge rgb(86, 2, 2);
+						display:none;}
+                                
+p#galleryTitle         {text-align: right}
+
+#galleryTitle input    {margin: 2px 0px}
+
+#galleryBox img        {border: 1px solid black; margin: 0px 15px;}
+
+p#slideCaption         {text-align: center; font-size: 14px}
+
+p#galleryFooter        {text-align: center; font-size: 14px}
+
+p#galleryFooter input  {margin: 5px 30px 0px 30px}
+
+
+
+
+/*RESPONSIVE ITEMS*/
+/*small desktop*/ 
+@media screen and (max-width: 1280px) {
+    .social{
+        right:0;
+    }
+ }
+/*large tablet*/
+  @media screen and (max-width: 1366px) {
+    .social{
+        right:0;
+        width:14%;
+    }
+	.content-right{
+		float:right;
+	}
+	.img-left {
+		width:350px;
+	}
+	#contactimage {
+		width:70%;
+	}
+ }
+ /*iPad*/
+   @media screen and (max-width: 1366px) {
+		.nav > li       {width: 13%;}
+		.nav > li > ul > li  {font-size:16px;}
+		#calendar {margin-left:30%;}
+		.calendar {width:500px; height:400px;}
+	}
+ }
+ 
+/*width under 1019 before phone*/
+  @media screen and (max-width: 1019px) {
+    .nav a, .contact{
+        margin:0 1%;
+    }
+ }
+
+/*large phone*/
+    @media screen and (max-width: 768px) {
+    .social{
+        text-align:center;
+        width:100%;
+        float:none;
+        position:relative;
+        border-top:1px dashed white;
+    }
+    .social img{
+        width:10%;
+        margin:3%;
+    }
+    .header{
+        display:block;
+        height:auto;
+        text-align:center;
+    }
+    .header img{
+        float:none;
+        text-align:center;
+    }
+    .nav a{
+        width:100%;
+        display:block;
+        margin:0;
+        border-top: 1px solid white;
+    }
+    .nav a.contact{
+        width:100%;
+        float:none;
+        display:block;
+        margin:0;
+        border-top: 1px solid white;
+    }
+    .nav{
+        text-align:center;
+        font-size:1.5em;
+		top:0px;
+    }
+	#calendar {margin-left:10%;}
+	.calendar {width:500px; height:400px;}
+	.page-header {position:absolute; top:300px; left:5%;}
+	.contact-header {top:300px;}
+	.content-left {width:100%;}
+	.content-right {width:100%;}
+	.nav > li > ul > li {font-size:14px;}
+	.nav > li       {width: 18%;}
+ }
+ /*iPhone*/
+  @media screen and (max-width: 640px) {
+    .left{
+        width:100%;
+        padding-top:5%;
+    }
+    .right{
+        width:100%;
+        border-top:1px solid black;
+        border-bottom:1px solid black;
+        padding-top:5%;
+    }
+    .middle{
+        width:100%;
+        border-top:1px solid black;
+        padding-top:5%;
+    }
+    .mainimage{
+        display:none;
+    }
+    .footer{
+        background-color:white;
+        color:black;
+
+    }
+	.bottom {
+		top:-150px;
+	}
+	.calendar {width:400px; height:200px;}
+ }

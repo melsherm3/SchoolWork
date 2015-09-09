@@ -1,0 +1,372 @@
+/*
+	Melissa Cunningham
+	HTML Project: Resume Stylesheet
+*/
+
+/*Set main properties*/
+body {
+	font-family: Arial;
+}
+/*Set header properties*/
+header {
+	background-color: rgb(18, 161, 107);
+	padding: 10px;
+}
+
+/*Shadow on all h1's*/
+h1 {
+	text-shadow: rgb(175,175,175) 1px 1px 1px;
+}
+
+/*Link hover properties*/
+a:hover {
+	opacity: 0.8;
+}
+
+/*Add a shadow to all  images*/
+img.shadow {
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/*Rotate image*/
+img.rotate {
+	-o-transform: rotate(-5deg);
+	-moz-transform: rotate(-5deg);
+	-webkit-transform: rotate(-5deg);
+	-ms-transform: rotate(-5deg);
+	transform: rotate(-5deg);
+}
+	
+/*Header properties*/
+header h1 {
+	color: white;
+	font-size: 2.0em;
+	line-height: 0.2em;
+	letter-spacing: -1px;
+	text-shadow: rgb(33, 33, 33) 1px 1px 5px;
+}
+
+/*Header subtitle*/
+header h2  {
+	color: white;
+	line-height: 0.2em;
+	font-size: 1.2em;
+	font-weight: 100;
+	letter-spacing: -1px;
+	text-shadow: rgb(33, 33, 33) 1px 1px 5px;
+}
+
+/*Header link styles*/
+header h1 a, header h2 a {
+	text-decoration: none;
+	color: white;
+}
+
+/*Header hover link styles*/
+header h1 a:hover, header h2 a:hover {
+	color: rgba(51, 51, 51, 0.8);
+	text-shadow: rgb(255, 255, 255) 1px 1px 3px;
+}
+
+/*Navigation Menu*/
+nav {
+	display: block;
+	background-color: rgb(222, 231, 245);
+	width: 100%;
+	border-bottom: 1px solid #888888;
+	border-top: 1px solid #888888;
+	background: -webkit-linear-gradient(rgb(189, 210, 244), rgb(222, 231, 245)); 
+	background: -webkit-gradient(linear, center top, center bottom, from(rgb(189, 210, 244)), to(rgb(222, 231, 245))); 
+	background: -o-linear-gradient(rgb(189, 210, 244), rgb(222, 231, 245)); 
+	background: -moz-linear-gradient(rgb(189, 210, 244), rgb(222, 231, 245));  
+	background: -ms-linear-gradient(rgb(189, 210, 244), rgb(222, 231, 245)); 
+	background: linear-gradient(rgb(189, 210, 244), rgb(222, 231, 245)); 
+}
+
+/*Nav list*/
+nav ul {
+	width: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	text-align: right;
+}
+
+/*Nav list items*/
+nav ul li {
+	display: inline;
+	color: black;
+	text-indent: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 1.7em;
+	font-family: Arial;
+	font-size: 1.2em;
+	text-shadow: rgb(255, 255, 255) 1px 1px 3px;
+}
+
+/*Nav links*/
+nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+/*Nav hover links*/
+nav ul li a:hover {
+	color: rgb(14, 89, 61);
+}
+
+/*Set background image behind image map*/
+figure#home-background {
+	background-image: url(eldorado.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	margin: 0px;
+}
+
+/*Bottom section with gray background*/
+div#home-bottom {
+	background-color: rgb(42, 31, 37);
+	width: 100%;
+	margin: auto;
+	border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+div#home-left, div#home-center, div#home-right {
+	background-color: rgb(42, 31, 37);
+	color: white;
+}
+
+/*Change opacity when hovering for images at bottom*/
+.rollover:hover {
+	opacity: 0.5;
+}
+
+/*Each item in bottom section*/
+div#home-bottom > div {
+	width: 33.333%;
+	display: inline;
+	float: left;
+	margin: auto;
+	text-align: center;
+}
+
+/*Linked text in bottom section*/
+h2 > a {
+	text-decoration: none;
+	color: white;
+	text-shadow: rgb(0, 0, 0) 1px 1px 5px;
+}
+
+h2 > a:hover {
+	color: rgb(222, 231, 245);
+}
+
+/*Footer properties*/
+footer {
+	clear: both;
+	background-color: rgb(18, 161, 107);
+	width: 100%;
+	margin: auto;
+	color: white;
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 0.8em;
+	text-shadow: rgb(33, 33, 33) 1px 1px 1px;
+}
+
+/*Footer links*/
+footer a {
+	color: white;
+}
+
+/*Main content section for sub pages*/
+.mainDiv {
+	min-height: 500px;
+	padding: 10px 100px;
+	margin: 0px;
+	background: -webkit-linear-gradient(rgba(120,135,132,1), rgba(255,255,255,1)); 
+	background: -webkit-gradient(linear, center top, center bottom, from(rgba(120,135,132,1)), to(rgba(255,255,255,1))); 
+	background: -o-linear-gradient(rgba(120,135,132,1), rgba(255,255,255,1)); 
+	background: -moz-linear-gradient(rgba(120,135,132,1), rgba(255,255,255,1));  
+	background: -ms-linear-gradient(rgba(120,135,132,1), rgba(255,255,255,1)); 
+	background: linear-gradient(rgba(120,135,132,1), rgba(255,255,255,1)); 
+}
+
+/*Float image to right of page*/
+.image-right {
+	float: right;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+}
+
+/*Float image to the left of the page*/
+.image-left {
+	float: left;
+}
+
+/*Image in main content section*/
+div.mainDiv > p > img {
+	margin: 0px 20px 50px 20px;
+}
+
+/*Paragraph in the main content section*/
+div.mainDiv > p {
+	font-size: 1.4em;
+}
+
+/*Div for right side of page*/
+div.rightDiv {
+	float: right;
+	margin-left: 20px;
+	margin-right: 50px;
+	margin-bottom: 20px;
+}
+
+/*Div for left side of page*/
+div.leftDiv {
+	float: left;
+	margin-left: 50px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	width: 40%;
+}
+
+
+/*TABLES*/
+/*Table for programming languages*/
+table.programmingTable {
+	margin-bottom: 20px;
+	margin-right: 20px;
+	margin-left: 50px;
+	float: left;
+	border-radius: 15px 15px 15px 15px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 1px solid #6b6a6b;
+}
+
+/*Table cell format for programming languages*/
+table.programmingTable td {
+	padding: 0px 5px;
+}
+
+/*Table caption*/
+caption {
+	font-size: 2em;
+	font-weight: bold;	
+	margin-bottom: 10px;
+	text-shadow: rgb(208, 208, 208) 1px 1px 1px;
+}
+
+/*firstColumn column group*/
+col.firstColumn {
+	width: 40%;
+}
+
+/*lastColumn column group*/
+col.lastColumn {
+	width: 40%;
+}
+
+/*Alternate table row background colors*/
+tbody tr:nth-of-type(even) {
+	background-color: rgba(231, 237, 235, 0.6);
+}
+
+tbody tr:nth-of-type(odd) {
+	background-color: rgba(186, 188, 187, 0.8);
+}
+
+/*Table rows*/
+tbody tr {
+	height: 30px;
+	border-bottom: 1px dotted black;
+	padding-left:10px;
+}
+
+/*Table footer*/
+tfoot {
+	text-align: center;
+}
+
+
+/*FORMS*/
+/*Contact Form*/
+
+/*Label properties*/
+label {
+	display: block;
+	clear: left;
+	float: left;
+	text-align: right;
+	margin: 2px 5px;
+	width: 40%;
+	font-size: 0.9em;
+}
+
+/*Input properties*/
+input {
+	display: block;
+	float: left;
+	width: 50%;
+	margin: 2px 0px;
+}
+
+/*Fieldset properties*/
+fieldset {
+	width: 95%;
+	margin-bottom: 10px;
+}
+
+/*Dropdown properties*/
+select {
+	display: block;
+	float: left;
+	margin: 2px;
+}
+
+/*Textarea properties*/
+textarea {
+	display:block;
+	float: left;
+	height: 75px;
+	width: 50%;
+}
+
+/*Submit button*/
+input[type="submit"] {
+	background-color: rgb(18, 161, 107);
+	float: right;
+	width: 150px;
+	height: 30px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid darkGray;
+}
+
+/*Change format when form items go into focus*/
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(222, 241, 235);
+}
+
+/*LIST PROPERTIES*/
+/*Don't show bullets*/
+ul.noBullets {
+	list-style-type: none;
+	float:left;	
+	padding: 0px;
+}
+
+ul.noBullets li {
+	margin-bottom: 10px;
+}
+
+/*Arrow bullets*/
+ul.arrow {
+	list-style-image: url('arrow.png');
+}
+

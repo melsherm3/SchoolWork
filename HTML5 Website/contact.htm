@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<!--
+	Melissa Cunningham
+	HTML Project: Resume Website
+	Summer 2015
+-->
+   <head>
+		<meta charset="UTF-8" />
+		<title>Melissa Cunningham | Web Design | Software Development</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<link href="devices.css" rel="stylesheet" type="text/css" />
+		<script src="modernizr-1.5.js"></script>
+		<script src="emailscramble.js" type="text/javascript"></script>
+   </head>
+   <body>
+		<header>
+			<h1><a href="home.htm">Melissa Cunningham</a></h1>
+			<h2><a href="home.htm">Programming & Web Design</a></h2>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="programming.htm">Programming</a></li>
+				<li><a href="webdesign.htm">Web Design</a></li>
+				<li><a href="consulting.htm">Consulting</a></li>
+				<li><a href="pastwork.htm">Past Work</a></li>
+				<li><a href="contact.htm">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="mainDiv">
+			<div class="leftDiv">
+			<h1>Contact Me: </h1>
+			<form action="mailto:melsherm3@gmail.com" method="post">
+				<fieldset id="formInfo">
+					<legend>Your Information (required)</legend>
+					<label for="fName">First Name</label>					
+					<input name="fName" id="fName" required="required" />
+					
+					<label for="lName">Last Name</label>
+					<input name="lName" id="lName" required="required" />
+
+					<label for="phone">Phone</label>
+					<input name="phone" id="phone" pattern="^(1?(?: |\-|\.)?(?:\(\d{3}\)|\d{3})(?: |\-|\.)?\d{3}(?: |\-|\.)?\d{4})$" required="required" title="Choose a standard US phone format." placeholder="nnn-nnn-nnnn" />
+					
+					<label for="email">Email</label>
+					<input name="email" id="email" type="email" required="required" />
+				
+				</fieldset>
+				<fieldset id="info">
+					<legend>Additional Information</legend>
+
+					<label for="url">Current Website (if applicable)</label>
+					<input name="url" id="url" type="url" />
+					
+					<label for="interests">Areas of Interest</label>
+					<select name="interests" id="interests" multiple="multiple">
+						<option value="programming">Programming</option>
+						<option value="consulting">Consulting</option>
+						<option value="webdesign">Web Design</option>
+					</select>
+					
+					<label for="notes">Comments</label>
+					<textarea name="notes" id="notes"></textarea>
+					
+				</fieldset>
+				<input type="submit" value="Send" />
+			</form>
+			</div>
+			<div class="rightDiv" id="contact">
+				<h1>Contact Information:</h1>
+				<ul class="noBullets">
+					<li>Melissa Cunningham</li>
+					<li>508-560-2983</li>
+					<li>
+						<script type="text/javascript">
+						showEmail("3mrehslem","moc.liamg");
+						</script>
+					</li>
+					<li>4229 Sumac Ct</li>
+					<li>Boulder, CO 80301<li>					
+				</ul>
+			</div>
+		</div>
+		<footer>
+		<script type="text/javascript">
+			document.write("Melissa Cunningham ~ 508-560-2983 ~ ");
+			showEmail("3mrehslem","moc.liamg");
+		</script>
+		</footer>
+   </body>
+</html>

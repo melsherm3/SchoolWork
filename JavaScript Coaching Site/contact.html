@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Red Arrow Racing - Contact Richie</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<script type = "text/javascript" src = "redarrow.js"></script>
+	<script type = "text/javascript" src = "contact.js"></script>
+	
+</head>
+<body>
+	<div class="header" id="header"></div>
+    <div class="maincontent">
+	<h1 class="contact-header">Contact Richie</h1>
+		<div class="form">
+			<form method="post" action="contact-done.html" id="contactForm" name="contactForm">
+				<h2>Name:*<br />
+				<input type="text" name="name" class="form-input" id="cname"></h2>
+				<h2>Phone:*<br />
+				<input type="text" name="phone" class="form-input" id="cphone"></h2>
+				<h2>Email:*<br />
+				<input type="text" name="email" class="form-input" id="cemail"></h2>
+				<h2>Event:<br />
+				<select multiple name="event" class="form-input">
+					<option value="olympic">Olympic Distance</option>
+					<option value="703">70.3</option>
+					<option value="ironman">Ironman</option>
+					<option value="running">Running</option>
+					<option value="cycling">Cycling</option>
+					<option value="swimming">Swimming</option>
+				</select></h2>
+				<h2>Interested In:<br />
+				<select name="coaching" class="form-input">
+					<option value="online">Online Coaching</option>
+					<option value="Boulder">Boulder Coaching</option>
+					<option value="Consulting">Consulting</option>
+				</select></h2>
+				<h2>Comments:<br />
+				<textarea name="message" rows="10" cols="30" class="form-input">
+				</textarea></h2>
+				<h2>
+				<input type="submit" value="Send" name="send">
+				<input type="reset" value="Clear Form">
+				<input type="button" value="Save Contact Info" id="saveContact">
+				</h2>
+			</form>
+
+			<p>*indicates a required field.</p>
+		</div>
+		<div class="contact" id="contact-info">
+			<img src = "img/richie-profile.jpg" id="contactimage">
+			<h2>Phone:</h2>
+			<p>310-254-8142</p>
+			<h2>Email: </h2>
+			<p id="emailAddress"></p>
+			<h2>Social Media</h2>
+			<p><a href="https://twitter.com/sirrichiec" target="_new">Twitter</a></p>
+			<p><a href="https://www.facebook.com/richiecunninghamtri" target="_new">Facebook</a></p>
+			<p><a href="http://www.strava.com/athletes/5396219" target="_new">Strava</a></p>
+			<p><a href="https://www.linkedin.com/profile/view?id=306334523" target="_new">LinkedIn</a></p>
+		</div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2015 Red Arrow Racing</p>
+    </div>
+
+</body>
+</html>
