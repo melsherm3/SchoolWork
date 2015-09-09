@@ -65,7 +65,7 @@ protected:
 //Code written by Melissa Cunningham below
 void weightedGraphType::createWeightedGraph()
 {
-    int vertex;
+    	int vertex;
 	int adjacentVertex;
 	double weight;
 	
@@ -97,15 +97,15 @@ void weightedGraphType::createWeightedGraph()
 	//Create the graph
 	for (int i=0; i<gSize; i++)
 	{
-        file >> vertex;
-        file >> adjacentVertex;
+       		file >> vertex;
+        	file >> adjacentVertex;
 
-        while (adjacentVertex != -999)
-        {
-            graph[vertex].insertLast(adjacentVertex);
-            file >> adjacentVertex;
-        } 
-    } 
+        	while (adjacentVertex != -999)
+        	{
+            		graph[vertex].insertLast(adjacentVertex);
+            		file >> adjacentVertex;
+        	} 
+    	} 
 
 	//Give weights an initial value at all locations
 	for (int i = 0; i < gSize; i++)
@@ -115,22 +115,22 @@ void weightedGraphType::createWeightedGraph()
 	//Add the weights to the graph
 	for (int i=0; i<gSize; i++)
 	{
-        file >> vertex;
-        file >> adjacentVertex;
+        	file >> vertex;
+        	file >> adjacentVertex;
 		file >> weight;
 		weights[vertex][adjacentVertex] = weight;
 
 		//Until you hit the end, add the weight of each path
-        while (adjacentVertex != -999)
-        {
-            file >> adjacentVertex;
+        	while (adjacentVertex != -999)
+        	{
+            		file >> adjacentVertex;
 			if(adjacentVertex != -999)
 			{
 				file >> weight;
 				weights[vertex][adjacentVertex] = weight;
 			}
-        } 
-    } 
+        	} 
+    	} 
 
 	//Close the file
 	file.close();
